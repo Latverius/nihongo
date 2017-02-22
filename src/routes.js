@@ -8,8 +8,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('app', {
+    .state('/', {
       url: '/',
-      component: 'app'
+      component: 'mainComponent'
+    })
+    .state('contact', {
+      url: '/contact',
+      component: 'contactComponent'
     });
 }

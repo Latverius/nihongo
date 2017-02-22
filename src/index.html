@@ -3,25 +3,43 @@
   <head>
     <base href="/">
     <meta charset="utf-8">
-    <title>FountainJS</title>
+    <title>NihonGO!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="http://fountainjs.io/assets/imgs/fountain.png" />
-  
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
     <!-- build:css({.tmp,src}) styles/vendor.css -->
     <!-- bower:css -->
     <!-- run `gulp inject` to automatically populate bower styles dependencies -->
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- build:css({.tmp,src}) styles/app.css -->
     <link rel="stylesheet" href="index.css"/>
     <!-- endbuild -->
+
   </head>
 
 
   <body ng-app="app">
+    <header-component></header-component>
+
     <ui-view></ui-view>
+
+    <footer-component></footer-component>
+
+    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/jquery.flexslider-min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery.fittext.js"></script>
+    <script src="assets/js/jquery.placeholder.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 
   <!-- build:js({.tmp,src}) scripts/vendor.js -->
@@ -39,4 +57,3 @@
   <!-- endinject -->
   <!-- endbuild -->
 </html>
-
