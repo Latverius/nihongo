@@ -41,7 +41,7 @@ body {
 }
 
 body {
-	background: darksalmon;
+	background: #a0afb3;
 	font: 16px/30px "merriweather-regular", serif;
 	font-weight: normal;
 	color: #575859;
@@ -662,13 +662,15 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	border: none;
-	font: 0/0 a;
+	font-size: 30px;
+  vertical-align: middle;
+	font-family: fantasy;
 	text-shadow: none;
-	color: transparent;
+	color: red;
 	width: 114px;
 	height: 66px;
-	background: url("../images/logoK@2x.png") no-repeat center;
-	background-size: 61px 14px;
+	background: url("../img/logoK@2x.png") no-repeat center;
+	background-size: 125%;
 }
 
 /* header social */
@@ -967,7 +969,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #hero {
-	background: darksalmon url(../images/hero-bg.jpg) no-repeat center;
+	background: #a0afb3 url(../img/japon1.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1293,7 +1295,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #portfolio {
-	background: darksalmon;
+	background: #a0afb3;
 	padding-top: 120px;
 	border-bottom: 1px solid #15191d;
 }
@@ -1654,7 +1656,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #services {
-	background: darksalmon;
+	background: #a0afb3;
 	padding-top: 120px;
 	padding-bottom: 120px;
 	border-bottom: 1px solid #15191d;
@@ -1738,7 +1740,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #about {
-	background: darksalmon;
+	background: #a0afb3;
 	padding-top: 120px;
 	padding-bottom: 120px;
 	border-bottom: 1px solid #15191d;
@@ -2016,7 +2018,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #testimonials {
-	background: darksalmon;
+	background: #a0afb3;
 	padding-top: 90px;
 	padding-bottom: 112px;
 	position: relative;
@@ -2180,7 +2182,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #contact {
-	background: darksalmon;
+	background: #a0afb3;
 	padding-top: 120px;
 	padding-bottom: 138px;
 	overflow: hidden;
@@ -2474,7 +2476,7 @@ footer .info {
 footer .footer-logo {
 	width: 100px;
 	height: 23px;
-	background: url("../images/logoW@2x.png") no-repeat center;
+	background: url("../img/logoW@2x.png") no-repeat center;
 	background-size: 100px 23px;
 	margin: 0 auto 21px;
 	display: block;

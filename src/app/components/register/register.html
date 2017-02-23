@@ -1,0 +1,65 @@
+<section id="register">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Register to get started with NihonGO!<span>.</span></h1>
+
+	         <hr />
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+
+      	<div id="register-form" class="six columns tab-whole left">
+
+            <!-- form -->
+            <form name="registerForm" id="registerForm" ng-submit="$rc.registerUser($rc)"  >
+      			<fieldset>
+
+                  <div class="group">
+ 						             <input ng-model="$rc.user.pseudo" type="text" id="registerPseudo" placeholder="Pseudo" value="" minLength="3" required />
+                         <span ng-bind="$rc.errors.pseudo"></span>
+                  </div>
+                  <div>
+	      			          <input ng-model="$rc.user.email" type="email" id="registerEmail" placeholder="Email" value="" minLength="5" required />
+                        <span ng-bind="$rc.errors.email"></span>
+	                </div>
+                  <div>
+	     				          <input ng-model="$rc.user.password" type="password" id="registerPass" placeholder="Password" value="" minLength="6" required />
+                        <span ng-bind="$rc.errors.password"></span>
+                        <span ng-bind="$rc.errors.passwordLength"></span>
+	               </div>
+                 <div>
+	                      <input ng-model="$rc.user.confirm" type="password" id="registerPassConfirm" placeholder="Confirm Password" value="" minLength="6" required />
+	               </div>
+                <div>
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>
+       				             <div class="s-loader">
+								  	                  <div class="bounce1"></div>
+								  	                  <div class="bounce2"></div>
+								  	                  <div class="bounce3"></div>
+								          </div>
+							      </div>
+                </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+      		</div>
+
+        </div>
+
+      </div> <!-- end row -->
+
+   </section>
