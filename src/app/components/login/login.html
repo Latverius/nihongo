@@ -1,0 +1,58 @@
+<section id="register">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Login<span>.</span></h1>
+
+	         <hr />
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+
+      	<div id="login-form" class="six columns tab-whole left">
+
+            <!-- form -->
+            <form name="loginForm" id="loginForm" ng-submit="$lc.loginUser($lc)"  >
+      			<fieldset>
+
+                  <div class="group">
+ 						             <input ng-model="$lc.user.pseudo" type="text" id="loginPseudo" placeholder="Pseudo" value="" minLength="3" required />
+                         <span ng-bind="$lc.errors.pseudo"></span>
+                  </div>
+                  <div>
+	     				          <input ng-model="$lc.user.password" type="password" id="registerPass" placeholder="Password" value="" minLength="6" required />
+                        <span ng-bind="$lc.errors.password"></span>
+                        <span ng-bind="$lc.errors.passwordLength"></span>
+	               </div>
+                <div>
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>
+       				             <div class="s-loader">
+								  	                  <div class="bounce1"></div>
+								  	                  <div class="bounce2"></div>
+								  	                  <div class="bounce3"></div>
+								          </div>
+							      </div>
+                </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+      		</div>
+
+        </div>
+
+      </div> <!-- end row -->
+
+   </section>

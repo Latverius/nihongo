@@ -20,6 +20,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/register',
       component: 'registerComponent'
     })
+    .state('login', {
+      url: '/login',
+      component: 'loginComponent'
+    })
     .state('contact', {
       url: '/contact',
       component: 'contactComponent'
