@@ -15,8 +15,8 @@ class LoginController {
       if(results.statusText == "OK") {
         console.log("Connexion réussie !!!");
         console.log(results);
-        that.rootScope.user = results.config.data;
-        that.location.path('/');
+        sessionStorage.setItem('user', results.config.data);
+        window.location.href = 'http://localhost:3000';
       }
     });
   }

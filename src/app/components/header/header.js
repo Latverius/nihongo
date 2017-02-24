@@ -1,9 +1,9 @@
 class HeaderController {
-  constructor($http, $rootScope) {
+  constructor($http) {
     let that = this;
     that.http = $http;
-    that.rootScope = $rootScope;
-    if(that.rootScope.user) {
+    that.user = sessionStorage.getItem('user');
+    if(that.user) {
       that.connected = true;
     }
     else {
