@@ -1,9 +1,10 @@
 class LogoutController {
-  constructor($http, $location) {
+  constructor($http, $location, $cookies) {
     let that = this;
     that.http = $http;
     that.location = $location;
     that.errors = {};
+    that.cookies = $cookies;
     that.logoutUser(that);
   }
 
@@ -13,7 +14,7 @@ class LogoutController {
       if(results.statusText == "OK") {
         console.log("Déconnexion réussie !!!");
         console.log(results);
-        sessionStorage.removeItem('user');
+        that.cookies.remove('user');
         window.location.href = 'http://localhost:3000';
       }
     });

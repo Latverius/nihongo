@@ -1,8 +1,9 @@
 class HeaderController {
-  constructor($http) {
+  constructor($http, $cookies) {
     let that = this;
     that.http = $http;
-    that.user = sessionStorage.getItem('user');
+    that.user = $cookies.get('user');
+    console.log("USER PSEUDO : ", $cookies.get("user"));
     if(that.user) {
       that.connected = true;
     }

@@ -24,6 +24,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/login',
       component: 'loginComponent'
     })
+    .state('profile', {
+      url: '/profile',
+      component: 'profileComponent'
+    })
     .state('logout', {
       url: '/logout',
       component: 'logoutComponent'

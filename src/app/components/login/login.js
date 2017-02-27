@@ -1,9 +1,10 @@
 class LoginController {
-  constructor($http, $location, $rootScope) {
+  constructor($http, $location, $rootScope, $cookies) {
     let that = this;
     that.http = $http;
     that.location = $location;
     that.rootScope = $rootScope;
+    that.cookies = $cookies;
     that.errors = {};
   }
 
@@ -15,8 +16,8 @@ class LoginController {
       if(results.statusText == "OK") {
         console.log("Connexion réussie !!!");
         console.log(results);
-        sessionStorage.setItem('user', results.config.data);
-        window.location.href = 'http://localhost:3000';
+        //that.cookies.put('user', results.config.data);
+        //window.location.href = 'http://localhost:3000';
       }
     });
   }
